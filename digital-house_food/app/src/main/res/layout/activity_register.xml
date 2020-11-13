@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco"
+    tools:context=".LoginActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiRegisterName"
+        style="@style/txtInputLayoutName"
+        app:boxBackgroundColor="@color/branco"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="Name"
+            style="@style/txtInputEditText"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiRegisterEmail"
+        style="@style/txtInputLayout"
+        app:boxBackgroundColor="@color/branco"
+
+        app:layout_constraintEnd_toEndOf="@+id/tiRegisterName"
+        app:layout_constraintStart_toStartOf="@+id/tiRegisterName"
+        app:layout_constraintTop_toBottomOf="@+id/tiRegisterName"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="Email"
+            style="@style/txtInputEditText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiRegisterSenha"
+        style="@style/txtInputLayout"
+        app:boxBackgroundColor="@color/branco"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tiRegisterEmail"
+        app:layout_constraintTop_toBottomOf="@+id/tiRegisterEmail"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <com.google.android.material.textfield.TextInputEditText
+             android:hint="Password"
+            android:inputType="textPassword"
+            style="@style/txtInputEditText"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiRegisterConfirmarSenha"
+        style="@style/txtInputLayout"
+        app:boxBackgroundColor="@color/branco"
+
+        app:layout_constraintEnd_toEndOf="@+id/tiRegisterSenha"
+        app:layout_constraintStart_toStartOf="@+id/tiRegisterSenha"
+        app:layout_constraintTop_toBottomOf="@+id/tiRegisterSenha"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            style="@style/txtInputEditText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnConcluirRegister"
+        android:text="Register"
+        style="@style/buttonStyleConfirmRegister"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tiRegisterConfirmarSenha"
+        app:layout_constraintStart_toStartOf="@+id/tiRegisterConfirmarSenha"
+
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

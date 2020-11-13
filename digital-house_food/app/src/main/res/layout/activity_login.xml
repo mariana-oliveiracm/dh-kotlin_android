@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco"
+    tools:context=".LoginActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiLoginEmail"
+        style="@style/txtInputLayoutEmail"
+
+        app:boxBackgroundColor="@color/branco"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="Email"
+            style="@style/txtInputEditText"
+             />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiLoginSenha"
+        style="@style/txtInputLayout"
+
+        app:boxBackgroundColor="@color/branco"
+
+        app:layout_constraintEnd_toEndOf="@+id/tiLoginEmail"
+        app:layout_constraintStart_toStartOf="@+id/tiLoginEmail"
+        app:layout_constraintTop_toBottomOf="@+id/tiLoginEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="Password"
+            android:inputType="textPassword"
+            style="@style/txtInputEditText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+     <com.google.android.material.button.MaterialButton
+         android:id="@+id/btnLogin"
+         android:text="log in"
+         style="@style/buttonStyleLogin"
+
+         app:layout_constraintEnd_toEndOf="@+id/tiLoginSenha"
+         app:layout_constraintStart_toStartOf="@+id/tiLoginSenha"
+         app:layout_constraintTop_toBottomOf="@+id/tiLoginSenha" />
+
+
+     <com.google.android.material.button.MaterialButton
+         android:id="@+id/btnRegister"
+         android:text="register"
+         style="@style/buttonStyleRegister"
+
+
+         app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+         app:layout_constraintStart_toStartOf="@+id/btnLogin"
+         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <!--<View
+        android:id="@+id/tvBreak1"
+        style="@style/separatorLeft"
+
+        app:layout_constraintEnd_toStartOf="@+id/tvOr"
+        app:layout_constraintStart_toStartOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <View
+        android:id="@+id/tvBreak2"
+        style="@style/separatorRight"
+
+        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+        app:layout_constraintStart_toEndOf="@+id/tvOr"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+     <TextView
+         android:id="@+id/tvOr"
+         android:text="OR"
+
+         android:layout_width="50dp"
+         android:layout_height="wrap_content"
+
+         android:textColor="@color/azul"
+         android:textAlignment="center"
+
+         android:layout_marginTop="40dp"
+
+         app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+         app:layout_constraintStart_toStartOf="@+id/btnLogin"
+         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin">
+
+        <View
+            android:id="@+id/tvBreak1"
+            style="@style/separatorLeft"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_toEndOf="@id/tvOr"
+
+            />
+
+        <View
+            android:id="@+id/tvBreak2"
+            style="@style/separatorRight"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toStartOf="@id/tvOr"
+
+            />
+
+        <TextView
+            android:id="@+id/tvOr"
+            android:layout_width="50dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_centerInParent="true"
+            android:text="OR"
+            android:textAlignment="center"
+
+            android:textColor="@color/azul"
+
+            />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

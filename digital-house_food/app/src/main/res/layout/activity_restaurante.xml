@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestauranteActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/alturaImagemRestaurante">
+
+        <ImageView
+            android:id="@+id/restauranteImagem"
+            tools:src="@tools:sample/avatars"
+            style="@style/imgTopo" />
+
+        <ImageView
+            android:id="@+id/voltarRestaurante"
+            android:src="@drawable/back"
+            style="@style/btnBack"
+            app:tint="@color/branco"
+            />
+
+        <TextView
+            android:id="@+id/nomeRestaurante"
+            style="@style/tvNomeTitulo"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/tvPratosPrincipais"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativelayout" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

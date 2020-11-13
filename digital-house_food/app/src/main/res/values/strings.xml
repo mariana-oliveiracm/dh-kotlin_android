@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Digital House Food</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <string name="nome_cadastro">Name</string>
+    <string name="email_cadastro">Email</string>
+    <string name="password_cadastro">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <string name="email_invalido">Digite um email válido</string>
+    <string name="senhas_diferentes">As senhas precisam ser iguais</string>
+    <string name="campo_obrigatorio">Campo %1$s está em branco</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

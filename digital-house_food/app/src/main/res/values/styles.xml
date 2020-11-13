@@ -1,0 +1,147 @@
+<resources>
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="txtInputLayoutEmail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/marginElements</item>
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:layout_marginEnd">@dimen/marginElements</item>
+        <item name="android:textColorHint">@color/azul</item>
+    </style>
+
+    <style name="txtInputLayoutName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/marginElements</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginEnd">@dimen/marginElements</item>
+        <item name="android:textColorHint">@color/azul</item>
+    </style>
+
+    <style name="txtInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/marginElements</item>
+        <item name="android:layout_marginTop">@dimen/marginInput</item>
+        <item name="android:layout_marginEnd">@dimen/marginElements</item>
+        <item name="android:textColorHint">@color/azul</item>
+    </style>
+
+    <style name="txtInputEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/azul</item>
+        <item name="android:textColorHighlight">@color/azul</item>
+    </style>
+
+    <style name="tvNomeTitulo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/marginElements</item>
+        <item name="android:layout_marginTop">@dimen/marginTopNomeRestaurante</item>
+        <item name="android:text">nomedotopo</item>
+        <item name="android:textAppearance">?attr/textAppearanceHeadline5</item>
+        <item name="android:textColor">@color/branco</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="tvDescricao">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:text">descrição</item>
+        <item name="android:textColor">@color/cinza</item>
+    </style>
+
+    <style name="tvPratosPrincipais">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:text">Pratos principais</item>
+        <item name="android:textAppearance">?attr/textAppearanceHeadline5</item>
+        <item name="android:textColor">@color/cinza</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="buttonStyleLogin">
+        <item name="android:layout_marginStart">@dimen/marginElements</item>
+        <item name="android:layout_marginTop">@dimen/marginInputButton</item>
+        <item name="android:layout_marginEnd">@dimen/marginElements</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:backgroundTint">@color/vermelho</item>
+        <item name="android:textColor">@color/branco</item>
+        <item name="android:textColorHighlight">@color/azul</item>
+
+    </style>
+
+    <style name="buttonStyleRegister">
+        <item name="android:layout_marginStart">@dimen/marginElements</item>
+        <item name="android:layout_marginTop">@dimen/marginInputButtonCadastro</item>
+        <item name="android:layout_marginEnd">@dimen/marginElements</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:backgroundTint">@color/cinza</item>
+        <item name="android:textColor">@color/branco</item>
+    </style>
+
+    <style name="buttonStyleConfirmRegister">
+        <item name="android:layout_marginStart">@dimen/marginElements</item>
+        <item name="android:layout_marginTop">@dimen/marginInputButton</item>
+        <item name="android:layout_marginEnd">@dimen/marginElements</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:backgroundTint">@color/vermelho</item>
+        <item name="android:textColor">@color/branco</item>
+    </style>
+
+    <style name="btnBack">
+        <item name="android:src">@drawable/back</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginTop">@dimen/marginTopVoltar</item>
+        <item name="android:layout_marginLeft">@dimen/marginElements</item>
+    </style>
+
+    <style name="separatorLeft">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:background">@color/cinzaclaro</item>
+    </style>
+
+    <style name="separatorRight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:background">@color/cinzaclaro</item>
+    </style>
+
+    <style name="imgTopo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/alturaImagemRestaurante</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+
+
+</resources>

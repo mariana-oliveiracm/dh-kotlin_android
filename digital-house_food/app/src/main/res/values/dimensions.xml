@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="botaoVoltar">50dp</dimen>
+    <dimen name="marginInput">10dp</dimen>
+    <dimen name="distanceInput">30dp</dimen>
+    <dimen name="marginInputButton">50dp</dimen>
+    <dimen name="marginInputButtonCadastro">180dp</dimen>
+    <dimen name="marginButtons">30dp</dimen>
+    <dimen name="alturabotao">45dp</dimen>
+    <dimen name="alturaImagemRestaurante">230dp</dimen>
+    <dimen name="marginElements">20dp</dimen>
+    <dimen name="marginTopVoltar">10dp</dimen>
+    <dimen name="marginTopNomeRestaurante">180dp</dimen>
+
+
+</resources>
